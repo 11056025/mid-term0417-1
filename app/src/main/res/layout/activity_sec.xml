@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecActivity">
+
+    <TextView
+        android:id="@+id/MainDishTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="96dp"
+        android:text="主食"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/BeverageTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="甜點："
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/DrinkTxt"
+        app:layout_constraintTop_toBottomOf="@+id/DrinkTxt" />
+
+    <TextView
+        android:id="@+id/DrinkTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="108dp"
+        android:text="飲料"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@+id/MainDishTxt"
+        app:layout_constraintTop_toBottomOf="@+id/MainDishTxt" />
+
+    <CheckBox
+        android:id="@+id/chbChip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="洋芋片 80元"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@+id/RGpDrink"
+        app:layout_constraintTop_toBottomOf="@+id/chbCookie" />
+
+    <CheckBox
+        android:id="@+id/chbCookie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="曲奇 60元"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@+id/BeverageTxt"
+        app:layout_constraintStart_toStartOf="@+id/RGpDrink"
+        app:layout_constraintTop_toTopOf="@+id/BeverageTxt"
+        app:layout_constraintVertical_bias="0.307" />
+
+    <RadioGroup
+        android:id="@+id/RGpMain"
+        android:layout_width="204dp"
+        android:layout_height="144dp"
+        android:layout_marginStart="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/MainDishTxt"
+        app:layout_constraintTop_toTopOf="@+id/MainDishTxt">
+
+        <RadioButton
+            android:id="@+id/btnRice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="炒飯 15元"
+            android:textSize="22sp" />
+
+        <RadioButton
+            android:id="@+id/btnnoodle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="炒麵 20元"
+            android:textSize="22sp" />
+
+        <RadioButton
+            android:id="@+id/btnNoodles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="涼麵 10元"
+            android:textSize="22sp" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/RGpDrink"
+        android:layout_width="144dp"
+        android:layout_height="96dp"
+        app:layout_constraintStart_toStartOf="@+id/RGpMain"
+        app:layout_constraintTop_toTopOf="@+id/DrinkTxt">
+
+        <RadioButton
+            android:id="@+id/btnBlackTea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="紅茶 10元"
+            android:textSize="22sp" />
+
+        <RadioButton
+            android:id="@+id/btnMilkTea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="奶茶 15元"
+            android:textSize="22sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/showPopupButtonSecActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="116dp"
+        android:text="顯示彈跳視窗"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

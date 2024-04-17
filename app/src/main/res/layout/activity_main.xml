@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/MainDishTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="232dp"
+        android:text="主食："
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TotalTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="48dp"
+        android:text="總金額:"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/BeverageTxt"
+        app:layout_constraintTop_toBottomOf="@+id/desertTxt" />
+
+    <TextView
+        android:id="@+id/desertTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="40dp"
+        android:text="甜點:"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/BeverageTxt"
+        app:layout_constraintTop_toBottomOf="@+id/BeverageTxt" />
+
+    <TextView
+        android:id="@+id/txtMainDish"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/MainDishTxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/MainDishTxt"
+        app:layout_constraintTop_toTopOf="@+id/MainDishTxt"
+        app:layout_constraintVertical_bias="1.0"
+        tools:text="從另頁面的來的主食" />
+
+    <TextView
+        android:id="@+id/txtBeverage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/BeverageTxt"
+        app:layout_constraintStart_toStartOf="@+id/txtMainDish"
+        app:layout_constraintTop_toTopOf="@+id/BeverageTxt"
+        app:layout_constraintVertical_bias="1.0"
+        tools:text="從另頁面的來的飲料" />
+
+    <TextView
+        android:id="@+id/txtTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/txtDesert"
+        app:layout_constraintTop_toTopOf="@+id/TotalTxt"
+        tools:text="從另頁面的來的金額" />
+
+    <TextView
+        android:id="@+id/txtDesert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/txtBeverage"
+        app:layout_constraintTop_toTopOf="@+id/desertTxt"
+        tools:text="從另頁面的來的甜點" />
+
+    <TextView
+        android:id="@+id/BeverageTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="飲料："
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/MainDishTxt"
+        app:layout_constraintTop_toBottomOf="@+id/MainDishTxt" />
+
+    <Button
+        android:id="@+id/btnOpen"
+        android:layout_width="152dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
+        android:text="點餐"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.967"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BeverageTxt"
+        app:layout_constraintVertical_bias="0.973" />
+
+    <TextView
+        android:id="@+id/Topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="點餐"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
